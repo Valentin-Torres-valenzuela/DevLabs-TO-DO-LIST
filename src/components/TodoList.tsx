@@ -28,14 +28,14 @@ const handleAddTodo = () => {
 
         toast.success('Tarea agregada correctamente', {
             position: 'top-right',
-            autoClose: 3000,
+            autoClose: 1000,
         });
 
         queryClient.invalidateQueries('todos');
     } else {
         toast.error('Error al intentar agregar la tarea', {
             position: 'top-right',
-            autoClose: 3000,
+            autoClose: 1000,
         });
     }
 };
