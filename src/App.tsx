@@ -6,6 +6,8 @@ import TodoList from './components/TodoList';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import axios from 'axios';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const store = configureStore({
   reducer: {
@@ -28,6 +30,7 @@ function App() {
   return (
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
+      <ToastContainer position="top-right" autoClose={3000} />
         <TodoList />
         <ReactQueryDevtools />
       </QueryClientProvider>
