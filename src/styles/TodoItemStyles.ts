@@ -30,7 +30,7 @@ export const TodoListCheckbox = styled.input`
 
 export const RemoveTodoButton = styled.button`
 
-  background-color: #c82333 ;
+  background-color: #c82333;
   color: #fff;
   border: none;
   padding: 8px 10px;
